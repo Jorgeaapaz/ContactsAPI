@@ -61,3 +61,18 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# Exclude vendored JavaScript libraries from GitHub language statistics
+###############################################################################
+ContactsAPI/Scripts/** linguist-vendored
+
+###############################################################################
+# Exclude generated source maps
+###############################################################################
+*.map linguist-generated
+
+###############################################################################
+# Exclude Bootstrap distribution CSS, but keep custom Site.css
+###############################################################################
+ContactsAPI/Content/bootstrap* linguist-vendored
