@@ -1,6 +1,7 @@
 ﻿using ContactsAPI.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,7 @@ namespace ContactsAPI.DataAccess
     public class ContactsQryExecute
     {
         #region FIELDS
-        private readonly string connectionString = "Server=tcp:jaapdemo.database.windows.net,1433;Initial Catalog=CatalogOne;Persist Security Info=False;User ID=dbadmin;Password=Pa11word;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private readonly string connectionString = ConfigurationManager.ConnectionStrings["ContactsDB"].ConnectionString;
         #endregion
 
 

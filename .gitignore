@@ -360,4 +360,10 @@ MigrationBackup/
 .ionide/
 
 # Fody - auto-generated XML schema
+
+# ASP.NET - exclude Web.config to protect sensitive data (connection strings, secrets)
+# Use Web.Debug.config / Web.Release.config transforms for environment-specific settings
+Web.config
+!Web.Debug.config
+!Web.Release.config
 FodyWeavers.xsd
